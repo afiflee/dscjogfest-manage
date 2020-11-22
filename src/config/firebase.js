@@ -6,13 +6,14 @@ import 'firebase/messaging';
 import 'firebase/functions';
 
 const firebaseConfig = {
-  apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxx",
-  authDomain: "xxxxxxxxxxxxxxxxxxxxxxxxx",
-  databaseURL: "xxxxxxxxxxxxxxxxxxxxxxxxx",
-  projectId: "xxxxxxxxxxxxxxxxxxxxxxxxx",
-  storageBucket: "xxxxxxxxxxxxxxxxxxxxxxxxx",
-  messagingSenderId: "xxxxxxxxxxxxxxxxxxxxxxxxx",
-  appId: "xxxxxxxxxxxxxxxxxxxxxxxxx"
+  apiKey: "AIzaSyBUs2q0xRxHY4jcIXmIXnXSTtrz_fpGVOU",
+  authDomain: "dscjogfest.firebaseapp.com",
+  databaseURL: "https://dscjogfest.firebaseio.com",
+  projectId: "dscjogfest",
+  storageBucket: "dscjogfest.appspot.com",
+  messagingSenderId: "701163775030",
+  appId: "1:701163775030:web:31de43af07fb98a4d86497",
+  measurementId: "G-ZCNCJMNBKM"
 };
 
 firebase.initializeApp(firebaseConfig);

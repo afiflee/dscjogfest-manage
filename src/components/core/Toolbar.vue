@@ -14,7 +14,7 @@
         to="/"
         class="google-font grey--text text--darken-2"
         style="text-decoration:none;font-size:110%"
-        >DevFest India Manage</router-link
+        >DSCJogFest Manage</router-link
       >
     </v-toolbar-title>
     <v-spacer></v-spacer>
