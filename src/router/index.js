@@ -52,16 +52,16 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-    document.title = to.meta.title + " - DevFest India Admin";
+    document.title = to.meta.title + " - DSC Jogja Admin";
   }
 
   if (to.matched.some(record => record.meta.requiresAuth)) {
-    if (firebase.auth.currentUser) {
+    if (firebase.auth().currentUser) {
       next();
     } else {
       next('login');
     }
-  } else if (firebase.auth.currentUser && to.name == "Login") {
+  } else if (firebase.auth().currentUser && to.name == "Login") {
     next("/");
   } else {
     next();

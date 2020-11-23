@@ -11,7 +11,7 @@ import Chart from 'chart.js'
 Vue.use(Chartkick.use(Chart))
 Vue.config.productionTip = false
 
-firebase.auth.onAuthStateChanged(()=>{
+firebase.auth().onAuthStateChanged(()=>{
   new Vue({
     router,
     store,

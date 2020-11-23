@@ -19,9 +19,9 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.firestore().enablePersistence({synchronizeTabs:!0}).catch(()=>{console.warn("DB offline support not available")})
 export default{
-  firestore:firebase.firestore(),
-  auth:firebase.auth(),
+  firestore:firebase.firestore,
+  auth:firebase.auth,
   authw:firebase.auth,
-  functions: firebase.functions(),
+  functions: firebase.functions,
   firebase:firebase
 };
