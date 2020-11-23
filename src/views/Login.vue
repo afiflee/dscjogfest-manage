@@ -26,8 +26,6 @@ export default {
   mounted() {
     if (FDK.auth.currentUser) {
       this.$router.replace("/");
-    } else {
-      this.alertMsg = "Kindly login";
     }
   },
   methods:{

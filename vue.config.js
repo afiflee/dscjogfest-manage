@@ -7,7 +7,7 @@ module.exports = {
     "vuetify"
   ],
   pwa: {
-    name: 'DevFest India Manage',
+    name: 'Dscjogfest Manage',
     workboxPluginMode: 'InjectManifest',
     themeColor: '#3F51B5',
     msTileColor: '#3F51B5',

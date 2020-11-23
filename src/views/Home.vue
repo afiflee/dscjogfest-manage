@@ -39,10 +39,10 @@
                   <pie-chart
                     :download="true"
                     :data="[
-                      ['0 - 5 years', exp.alevel],
-                      ['6 - 10 years', exp.blevel],
-                      ['11 - 20 years', exp.clevel],
-                      ['21+ years', exp.dlevel],
+                      ['0 - 2 years', exp.alevel],
+                      ['3 - 6 years', exp.blevel],
+                      ['7 - 9 years', exp.clevel],
+                      ['10+ years', exp.dlevel],
                     ]"
                   ></pie-chart>
                 </div>
@@ -125,11 +125,12 @@ export default {
       dlevel: 0,
     },
     interest: {
-      mobile: 0,
-      cloud: 0,
-      web: 0,
-      ml: 0,
-      design: 0,
+      frontend: 0,
+      backend: 0,
+      devops: 0,
+      android: 0,
+      flutter: 0,
+      uiux: 0
     },
   }),
   methods: {
@@ -187,16 +188,16 @@ export default {
 
             // Experience
             this.exp.alevel = this.adata.filter(
-              (res) => res.experience === "0 - 5 years"
+              (res) => res.experience === "0 - 2 years"
             ).length;
             this.exp.blevel = this.adata.filter(
-              (res) => res.experience === "6 - 10 years"
+              (res) => res.experience === "3 - 6 years"
             ).length;
             this.exp.clevel = this.adata.filter(
-              (res) => res.experience === "11 - 20 years"
+              (res) => res.experience === "7 - 9 years"
             ).length;
             this.exp.dlevel = this.adata.filter(
-              (res) => res.experience === "21+ years"
+              (res) => res.experience === "10+ years"
             ).length;
           }
         })
